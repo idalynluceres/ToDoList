@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    font-family: 'Poppins' sans-serif;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("https://i.gifer.com/origin/1d/1d8d3ee4b085e927c03c3da9be679b87_w200.gif");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+h1
+{
+    font-family: 'Clicker Script', cursive;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 320px;
+    margin-right: 320px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 5px solid pink;
+    border-radius: 25px;
+    background-color: white;
+    /* color: white; */
+}
+p
+{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    background: rgba(198, 179, 179, 0.4);
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 5px;
+}
+h6
+{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 15px;
+    color: rgb(247, 171, 184);
+    background: rgba(198, 179, 179, 0.4);
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 5px;
+}
+form
+{
+    position: relative;
+    padding: 30px 20px;
+}
+form input{
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+form input:focus
+{
+    outline: none;
+    border-color: rgb(247, 171, 184);
+}
+form button
+{
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: rgb(247, 171, 184);
+    border: none;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+}
+#itemList
+{
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: 2px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px;
+    height: auto;
+    background-image: linear-gradient(rgba(216, 80, 146, 0.4), rgba(216, 80, 146, 0.4)), url("https://animesher.com/orig/1/199/1999/19990/animesher.com_gif-pastel-aesthetic-1999031.gif");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#itemList input
+{
+    width: 50%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+.btnEdit
+{
+    font-size: 30px;
+    padding: 5px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: rgb(215, 80, 103);
+}
+.btnEdit:hover
+{
+    color: #ffffff;
+    background-color: pink;
+}
+.btnSave
+{
+    font-size: 30px;
+    padding: 5px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: rgb(215, 80, 103);
+}
+.btnSave:hover
+{
+    color: #ffffff;
+    background-color: pink;
+}
+.btnDelete
+{
+    font-size: 30px;
+    padding: 5px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: rgb(215, 80, 103);
+}
+.btnDelete:hover
+{
+    color: #ffffff;
+    background-color: pink;
+}
