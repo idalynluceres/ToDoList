@@ -22,6 +22,12 @@ function addItem()
 {
     // get value from input
     let listTitle = document.querySelector("#listTitle").value;
+    if(listTitle == "")
+    {
+        swal("Empty.", "Please type something.", "info");
+    }
+    else
+    {
     // get the parent node
     let itemList = document.querySelector("#itemList");
     // create child nodes
@@ -106,5 +112,6 @@ function addItem()
             }
             swal(text);
         }
+    }
     }
 };

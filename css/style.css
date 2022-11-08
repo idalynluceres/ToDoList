@@ -163,3 +163,13 @@ form button
     color: #ffffff;
     background-color: pink;
 }
+footer 
+{
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("https://i.gifer.com/origin/1d/1d8d3ee4b085e927c03c3da9be679b87_w200.gif");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    margin-top: 600px;
+}
