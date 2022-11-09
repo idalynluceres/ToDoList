@@ -60,7 +60,22 @@ function addItem()
     function delItem()
     {
         listItem.remove();
+        addListBtn.removeAttribute("disabled", "")
         swal(listInput.value + " was deleted!", "Changes saved!", "info");
+    }
+
+    if (itemList.childElementCount > 9)
+    {
+        addListBtn.setAttribute("disabled", ""),
+        swal({
+            icon: 'error',
+            title: 'Oops...Unable to add.',
+            text: 'Please remove items to add another.'
+          })
+    }
+    else if (itemList.childElementCount < 9)
+    {
+        addListBtn.removeAttribute("disabled", "")
     }
 
     function editItem()
