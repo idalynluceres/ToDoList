@@ -7,13 +7,18 @@ let titleAnimation = new Typed(".title",
     loop:true
 });
 // *** RT Date *** \\
-const date = new Date();
-let day = date.getDate();
-let month = date.getMonth() + 1;
-let year = date.getFullYear();
-let time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-let currentDate = `${day}-${month}-${year}-${time}`;
-document.getElementById("displayDate").innerHTML = "Today is " + currentDate + ". How are you doin'?";
+var todayDate = new Date();
+var getTodayDate = todayDate.getDate();
+var getTodayMonth =  todayDate.getMonth()+1;
+var getTodayFullYear = todayDate.getFullYear();
+var getCurrentHours = todayDate.getHours();
+var getCurrentMinutes = todayDate.getMinutes();
+var getCurrentAmPm = getCurrentHours >= 12 ? 'PM' : 'AM';
+getCurrentHours = getCurrentHours % 12;
+getCurrentHours = getCurrentHours ? getCurrentHours : 12; 
+getCurrentMinutes = getCurrentMinutes < 10 ? '0'+getCurrentMinutes : getCurrentMinutes;
+var getCurrentDateTime = getTodayDate + '-' + getTodayMonth + '-' + getTodayFullYear + ' ' + getCurrentHours + ':' + getCurrentMinutes + ' ' + getCurrentAmPm;
+document.getElementById("displayDate").innerHTML = "Today is " + getCurrentDateTime + ". How are you doin'?";
 // *** Form *** \\
 let addListBtn = document.querySelector("#btnAdd");
 addListBtn.addEventListener("click", addItem);
